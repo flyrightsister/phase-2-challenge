@@ -57,10 +57,8 @@ button {
 .item-section {
   display: flex;
   flex-direction: column;
-  /*flex-wrap: nowrap;*/
   justify-content: space-around;
   margin-bottom: 20px;
-
 }
 .item {
   display: flex;

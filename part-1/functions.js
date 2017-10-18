@@ -61,9 +61,6 @@ function filterBetween(array, min, max) {
   return filteredArray;
 }
 
-// console.log(filterBetween([5, 15, 25, 30, 35], 15, 34));
-// console.log(filterBetween(array, min, max));
-
 module.exports = {
   weekday,
   snippet,

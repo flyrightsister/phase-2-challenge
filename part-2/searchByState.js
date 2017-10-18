@@ -10,9 +10,7 @@ function stateSearch(state) {
   const stateSearchResults = [];
   const clientList = clients();
   clientList.forEach((client) => {
-    // see if client.rep_name begins with name
     const stateName = client.state.toLowerCase();
-
     for (let i = 0; i < state.length; i++) {
       if (stateName[i] !== state[i].toLowerCase()) {
         break;

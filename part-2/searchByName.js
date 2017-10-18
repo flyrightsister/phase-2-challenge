@@ -2,7 +2,6 @@ const fs = require('fs');
 
 const clients = () => JSON.parse(fs.readFileSync('./clients.json', 'utf8'));
 
-// console.log(clients());
 const input = process.argv.slice(2).join(' ');
 
 function nameSearch(name) {

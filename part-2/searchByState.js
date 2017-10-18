@@ -3,12 +3,10 @@ const fs = require('fs');
 
 const clients = () => JSON.parse(fs.readFileSync('./clients.json', 'utf8'));
 
-// console.log(clients());
 const input = process.argv[2];
 
 function stateSearch(state) {
   console.log(`Finding clients \x1b[31m%s\x1b[37m state "${state}"...\n`, 'in');
-
   const stateSearchResults = [];
   const clientList = clients();
   clientList.forEach((client) => {
@@ -34,4 +32,3 @@ function stateSearch(state) {
 }
 
 console.log(stateSearch(input));
-// console.log('\x1b[36m%s\x1b[0m', 'I am cyan'); // cyan
